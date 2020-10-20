@@ -2,6 +2,7 @@
   "headers": {
     "/*":{
       "X-Author": "Исайчев, Данила Олегович"
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
