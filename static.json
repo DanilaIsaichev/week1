@@ -1,7 +1,7 @@
 {
   "headers": {
     "/*":{
-      "X-Author": "Исайчев, Данила Олегович",
+      "X-Author": "190522",
       "Access-Control-Allow-Origin": "*"
     }
   }
