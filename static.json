@@ -1,11 +1,5 @@
 {
-  "headers": {
-    "/*":{
-      "X-Author": "190522",
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plain; charset=UTF-8"
-    }
-  },
+  
   "main": "index.js",
   "scripts": {
   "start": "node index.js"}
