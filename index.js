@@ -5,4 +5,4 @@ http.Server((req, res) =>  {
     if (req.url === '/sample') return res.end('text/plain');
     res.end(String(fs.readFileSync(__filename)));
 })
-.listen(4321);
+.listen(process.env.PORT || 3000);
