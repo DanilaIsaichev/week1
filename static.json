@@ -1,12 +1,20 @@
 {
   "headers": {
-    "/*":{
-      "X-Author": "190522",
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plain; charset=UTF-8"
+    "/*": {
+      "X-Author": "190522", 
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/login/": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/sample/": {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
     }
   },
-  "main": "index.js",
-  "scripts": {
-  "start": "node index.js"}
+  "routes": {
+    "/login/": "/login.html",
+    "/sample/": "/sample.html"
+  }
 }
