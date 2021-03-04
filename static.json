@@ -11,8 +11,12 @@
     "/sample/": {
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "*"
-    }
+    },
     "/promise/": {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
+    }
+    "/fetch/": {
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "*"
     }
@@ -20,6 +24,7 @@
   "routes": {
     "/login/": "/login.html",
     "/sample/": "/sample.html",
-    "/promise/": "/promise.html"
+    "/promise/": "/promise.html",
+    "/fetch/": "/fetch.html"
   }
 }
