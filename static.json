@@ -12,9 +12,14 @@
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "*"
     }
+    "/promise/": {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
+    }
   },
   "routes": {
     "/login/": "/login.html",
-    "/sample/": "/sample.html"
+    "/sample/": "/sample.html",
+    "/promise/": "/promise.html"
   }
 }
