@@ -5,7 +5,7 @@
       input = document.getElementById("inp").value;
       const res = await fetch(input)
       .catch();
-      document.getElementById('inp').value = res.text();
+      document.getElementById('inp').value = await res.text();
     }
     </script>
  </head> 
