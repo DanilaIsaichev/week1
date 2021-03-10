@@ -1,9 +1,9 @@
 function task(x){
   var promise = new Promise((resolve, reject) => {
-    if(x < 18)
+    if(x < 18){
       resolve("yes")
-    else
+   } else{
       reject("no")
-  })
+  }})
   return promise;
 }
