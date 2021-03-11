@@ -19,12 +19,19 @@
     "/fetch/": {
       "Content-Type": "text/html",
       "Access-Control-Allow-Origin": "*"
+    },
+    "/result4/": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET","POST","PUT","DELETE","OPTIONS",
+      "Access-Control-Allow-Headers": "x-test","Content-Type","Accept","Access-Control-Allow-Headers"
     }
   },
   "routes": {
     "/login/": "/login.html",
     "/sample/": "/sample.html",
     "/promise/": "/promise.html",
-    "/fetch/": "/fetch.html"
+    "/fetch/": "/fetch.html",
+    "/result4/": "/result4.html"
   }
 }
