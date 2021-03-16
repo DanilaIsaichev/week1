@@ -1,4 +1,3 @@
-<script>
     const server = http.createServer((req, res) => {
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
@@ -9,4 +8,3 @@
         req.addListener("end", () => {res.end(JSON.stringify({"message": "190522", "x-result": req.headers["x-test"],"x-body": String(body)}));});
     })    
     server.listen()
-</script>
