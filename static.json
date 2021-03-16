@@ -21,7 +21,7 @@
       "Access-Control-Allow-Origin": "*"
     },
     "/result4/": {
-      "Content-Type": "application/json",
+      "Content-Type": "application/javascript",
       "Access-Control-Allow-Origin": "*"
     }
   },
