@@ -1,5 +1,5 @@
 <script>
-    const server = https.createServer((req, res) => {
+    const server = http.createServer((req, res) => {
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
         res.setHeader("Access-Control-Allow-Headers", "x-test,Content-Type,Accept,Access-Control-Allow-Headers");
@@ -8,5 +8,5 @@
         req.addListener("data", data => {body += data});
         req.addListener("end", () => {res.end(JSON.stringify({"message": "190522", "x-result": req.headers["x-test"],"x-body": String(body)}));});
     })    
-    server.listen(443)
+    server.listen()
 </script>
