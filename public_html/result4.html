@@ -1,1 +1,11 @@
-{"message":"190522","x-result":"yyyyy","x-body":"zzzzz"}
+<script>
+    const https = require('https');
+    const server = https.createServer((req, res) => {
+
+        res.setHeader("Content-Type", "application/json");
+        let body = '';
+        req.addListener("data", data => {body += data});
+        req.addListener("end", () => {res.end(JSON.stringify({"message": "190522", "x-result": req.headers["x-test"],"x-body": String(body)}));});
+    })    
+    server.listen(443)
+</script>
