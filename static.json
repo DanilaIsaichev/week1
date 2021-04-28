@@ -1,0 +1,35 @@
+{
+  "headers": {
+    "/*": {
+      "X-Author": "190522", 
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/login/": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/sample/": {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/promise/": {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/fetch/": {
+      "Content-Type": "text/html",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/result4/": {
+      "Content-Type": "application/javascript",
+      "Access-Control-Allow-Origin": "*"
+    }
+  },
+  "routes": {
+    "/login/": "/login.html",
+    "/sample/": "/sample.html",
+    "/promise/": "/promise.html",
+    "/fetch/": "/fetch.html",
+    "/result4/": "/result4.html"
+  }
+}

@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+    async function task(){
+      input = document.getElementById("inp").value;
+      const res = await fetch(input)
+      .catch();
+      document.getElementById('inp').value = await res.text();
+    }
+    </script>
+ </head> 
+ <body>
+   <input id="inp">
+   <button id="bt" onclick="task()">Кнопка</button>
+ </body>
+</html>

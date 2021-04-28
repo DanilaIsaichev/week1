@@ -1,0 +1,10 @@
+    const server = http.createServer((req, res) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+        res.setHeader("Access-Control-Allow-Headers", "x-test,Content-Type,Accept,Access-Control-Allow-Headers");
+        res.setHeader("Content-Type", "application/json");
+        let body = '';
+        req.addListener("data", data => {body += data});
+        req.addListener("end", () => {res.end(JSON.stringify({"message": "190522", "x-result": req.headers["x-test"],"x-body": String(body)}));});
+    })    
+    server.listen()
